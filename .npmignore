@@ -1,0 +1,36 @@
+# Source files
+src/
+*.ts
+!*.d.ts
+
+# Configuration files
+tsconfig*.json
+.eslintrc.json
+.eslintignore
+.prettierrc.json
+.prettierignore
+.editorconfig
+.commitlintrc.ts
+.lintstagedrc.json
+
+# Git
+.git/
+.gitignore
+.husky/
+
+# IDE
+.vscode/
+
+# Tests
+*.test.ts
+*.spec.ts
+__tests__/
+coverage/
+
+# Development
+node_modules/
+.env
+.env.local
+
+# Documentation
+README.md
