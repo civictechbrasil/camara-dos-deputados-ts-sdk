@@ -1,5 +1,5 @@
 {
-  "name": "@civictechbrasil/camara-dos-deputados-ts-sdk",
+  "name": "@civictechbrasil/camara-dos-deputados",
   "version": "0.1.0",
   "description": "SDK TypeScript para acesso à API da Câmara dos Deputados",
   "main": "dist/index.js",
