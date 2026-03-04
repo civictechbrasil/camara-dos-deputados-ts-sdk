@@ -1,0 +1,84 @@
+{
+  "env": {
+    "browser": false,
+    "es2021": true,
+    "node": true
+  },
+  "extends": [
+    "airbnb-base",
+    "airbnb-typescript/base",
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "prettier"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module",
+    "project": "tsconfig.eslint.json"
+  },
+  "plugins": ["@typescript-eslint", "eslint-plugin-import-helpers", "unused-imports"],
+  "rules": {
+    //eslint
+    "no-console": "warn",
+    "no-debugger": "warn",
+    "no-shadow": "off",
+    "no-unused-vars": "off",
+    "no-useless-constructor": "off",
+    "class-methods-use-this": "off",
+    "no-use-before-define": "off",
+    "padding-line-between-statements": [
+      "error",
+      { "blankLine": "always", "prev": "*", "next": "multiline-block-like" },
+      { "blankLine": "always", "prev": "multiline-block-like", "next": "*" },
+      { "blankLine": "always", "prev": "*", "next": ["const", "let", "export"] },
+      { "blankLine": "always", "prev": ["const", "let", "export"], "next": "*" },
+      { "blankLine": "any", "prev": ["const", "let", "export"], "next": ["const", "let", "export"] },
+      { "blankLine": "always", "prev": "*", "next": "return" }
+    ],
+    "max-classes-per-file": "off",
+    "sort-imports": [
+      "error",
+      {
+        "ignoreDeclarationSort": true,
+        "ignoreCase": true
+      }
+    ],
+    // import
+    "import/extensions": "off",
+    "import/prefer-default-export": "off",
+    "import-helpers/order-imports": [
+      "error",
+      {
+        "newlinesBetween": "always",
+        "groups": ["module", "/^@shared/", ["/^@//", "parent", "sibling", "index"], "type"],
+        "alphabetize": { "order": "asc", "ignoreCase": true }
+      }
+    ],
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": true
+      }
+    ],
+    "unused-imports/no-unused-imports": "error",
+    "unused-imports/no-unused-vars": [
+      "error",
+      {
+        "vars": "all",
+        "varsIgnorePattern": "^_",
+        "args": "after-used",
+        "argsIgnorePattern": "^_"
+      }
+    ],
+    // ts
+    "@typescript-eslint/no-use-before-define": "error",
+    "@typescript-eslint/no-shadow": "error",
+    "@typescript-eslint/no-unused-vars": "off",
+    "@typescript-eslint/no-useless-constructor": "error",
+    "@typescript-eslint/interface-name-prefix": "off",
+    "@typescript-eslint/explicit-function-return-type": "off",
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+    "@typescript-eslint/no-explicit-any": "off"
+  }
+}

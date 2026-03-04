@@ -1,0 +1,69 @@
+{
+  "name": "@civictechbrasil/camara-dos-deputados-ts-sdk",
+  "version": "0.1.0",
+  "description": "SDK TypeScript para acesso à API da Câmara dos Deputados",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/civictechbrasil/camara-dos-deputados-ts-sdk.git"
+  },
+  "bugs": {
+    "url": "https://github.com/civictechbrasil/camara-dos-deputados-ts-sdk.git/issues"
+  },
+  "homepage": "https://github.com/civictechbrasil/camara-dos-deputados-ts-sdk.git#readme",
+  "scripts": {
+    "prepare": "husky install",
+    "build": "tsc && tsc-alias",
+    "dev": "tsc --watch",
+    "test": "jest",
+    "lint": "eslint src/**/*.ts"
+  },
+  "keywords": [
+    "brazil",
+    "politics",
+    "camara",
+    "deputados",
+    "api",
+    "typescript",
+    "sdk"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.13.6",
+    "class-transformer": "^0.5.1",
+    "qs": "^6.15.0"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.4.4",
+    "@commitlint/config-conventional": "^17.4.4",
+    "@commitlint/types": "^20.4.3",
+    "@types/node": "^20.0.0",
+    "@types/qs": "^6.14.0",
+    "@typescript-eslint/eslint-plugin": "^6.21.0",
+    "@typescript-eslint/parser": "^6.21.0",
+    "eslint": "^8.35.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-airbnb-typescript": "^17.0.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-import-helpers": "^1.3.1",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-unused-imports": "^3.2.0",
+    "husky": "^8.0.3",
+    "jest": "^29.0.0",
+    "lint-staged": "^13.1.2",
+    "prettier": "^2.3.2",
+    "tsc-alias": "^1.8.16",
+    "typescript": "^5.0.0"
+  }
+}
