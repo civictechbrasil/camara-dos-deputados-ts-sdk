@@ -60,4 +60,5 @@ export const request = async <T>(config: RequestConfig, Model?: ClassConstructor
 
 export const apiRoutes = {
   deputies: '/deputados',
+  propositions: '/proposicoes',
 } as const;
